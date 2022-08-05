@@ -2,15 +2,15 @@
 ; Simple assembly procedure that gets called from the main function
 ; in a C program. The function signature is:
 ;
-; int assemblyProcedure(int);
+; int sendArray(int[],int);
 ;
-; @author Jacob Schrum, 8/4/2022
+; @author Jacob Schrum, 8/5/2022
 ; -----------------------------------------------------------------------------
 
-	global assemblyProcedure
+	global sendArray
 	section .text
-; The int parameter will be in register edi, and the return value comes from eax
-assemblyProcedure:
-	mov eax, edi		; Put edi in eax
-	add eax, 20			; Add 20 to eax
+; The int[] pointer parameter will be in register rdi, 
+; the int parameter is in esi, and the return value comes from eax
+sendArray:
+	mov eax, [rdi + 4*rsi]
 	ret 				; Implicitly returns eax

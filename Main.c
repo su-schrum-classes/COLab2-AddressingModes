@@ -11,11 +11,10 @@
 
 #include <stdio.h>
 
-int assemblyProcedure(int);
+int sendArray(int[],int);
 
 int main() {
-	int result1 = assemblyProcedure(10);
-	int result2 = assemblyProcedure(100);
-	printf("Result 1 = %d\n", result1);
-	printf("Result 2 = %d\n", result2);
+	int arr1[] = {5,3,75,23,12,-22,-331,32324,-122};
+	int index = 3;
+	printf("arr[%d] = %d which is %X in hex\n",index,arr1[index],arr1[index]);
 }
