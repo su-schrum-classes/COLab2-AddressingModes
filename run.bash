@@ -1,1 +1,1 @@
-nasm -felf64 Assembly.asm && gcc Main.c Assembly.o && ./a.out
+nasm -felf64 Assembly.asm && gcc -no-pie Main.c Assembly.o && ./a.out
