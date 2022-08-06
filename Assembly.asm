@@ -6,6 +6,7 @@
 
 	global sendArray
 	global readAssemblyIntArray
+
 	section .text
 ; The int[] pointer parameter will be in register rdi, 
 ; the int parameter is in esi, and the return value comes from eax
@@ -22,5 +23,5 @@ readAssemblyIntArray:
 	section .data
 
 intArray	dd 	89, 10, 67, -1, 4, 27, -12, 34, 86, 3
-quadArray	dq 	5FEE99h, 0E9392Ch, 0FFFh, 453h, 12345678h, 100h, 9ABCDEFh, 92Ah, 77h, 93Ch, 0BACh, 0Dh, 90203000h 
+quadArray	dq 	5FE368E99h, 0E9325492Ch, 0FF436Fh, 45FFFA3h, 123453E5678h, 100h, 9ABCDEFh, 92Ah, 77h, 93Ch, 0B664ACh, 0Dh, 90203000h 
 charArray 	db 	"Each character is a byte in memory, and these are stored in adjacent locations"
