@@ -21,4 +21,6 @@ readAssemblyIntArray:
 ; This section is a data segment that stores static global array variables
 	section .data
 
-intArray   dd 89, 10, 67, -1, 4, 27, -12, 34, 86, 3
+intArray	dd 	89, 10, 67, -1, 4, 27, -12, 34, 86, 3
+quadArray	dq 	5FEE99h, 0E9392Ch, 0FFFh, 453h, 12345678h, 100h, 9ABCDEFh, 92Ah, 77h, 93Ch, 0BACh, 0Dh, 90203000h 
+charArray 	db 	"Each character is a byte in memory, and these are stored in adjacent locations"
