@@ -24,4 +24,4 @@ There is also an assembly procedure called `readAssemblyIntArray` and at the bot
 ```
 printf("readAssemblyIntArray(%d) = %d\n", index, readAssemblyIntArray(index));
 ```
-There are also some additional arrays of different data types defined in the `.data` segment: `quadArray` and `charArray`. Write two new procedures named `readAssemblyQuadArray` and `readAssemblyCharArray`. These procedures retrieve and return values from a specific index in each of the corresponding arrays.
+There are also some additional arrays of different data types defined in the `.data` segment: `quadArray` and `charArray`. Write two new procedures named `readAssemblyQuadArray` and `readAssemblyCharArray`. These procedures should retrieve and return values from a specific index in each of the corresponding arrays.

@@ -17,5 +17,6 @@ int readAssemblyIntArray(int);
 int main() {
 	int arr1[] = {5,3,75,23,12,-22,-331,32324,-122};
 	int index = 3;
-	printf("arr[%d] = %d which is %X in hex\n",index,arr1[index],arr1[index]);	
+	int result = sendArray(arr1,index);
+	printf("arr[%d] = %d which is %X in hex\n",index,result,result);	
 }
