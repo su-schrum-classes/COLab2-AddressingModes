@@ -10,7 +10,7 @@ sudo apt-get -y install nasm
 
 # Lab 2: Addressing Modes
 
-After installing NASM, execute the code by running the command `bash run.sh`. It should initially output the following:
+After installing NASM, execute the code by running the command `bash run.bash`. It should initially output the following:
 ```
 arr[3] = 23 which is 17 in hex
 ```
