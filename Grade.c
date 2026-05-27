@@ -42,7 +42,7 @@ int main() {
 
 	for(i = 0; i < 40; i++) {
 		uint8_t byte = readAssemblyIntArrayByte(i);
-		printf("readAssemblyIntArrayByte(%d) = %u which is %X in hex\n",i byte,byte);
+		printf("readAssemblyIntArrayByte(%d) = %u which is %X in hex\n",i,byte,byte);
 	}
 
 	loopIntArrayBytes();
