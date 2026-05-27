@@ -26,6 +26,11 @@ printf("readAssemblyIntArray(%d) = %d\n", index, readAssemblyIntArray(index));
 ```
 There are also some additional arrays of different data types defined in the `.data` segment: `quadArray` and `charArray`. Write two new procedures named `readAssemblyQuadArray` and `readAssemblyCharArray`. Note that displaying quad values will require the format codes `%ld` and `%lX`. These procedures should retrieve and return values from a specific index in each of the corresponding arrays.
 
-Write loops in the `main` function of the C code that print the individual elements of each array in a way that makes it easy to check that you are correctly processing each array.
+Write functions in the C code that loop through the array values and print the individual elements of each array one line at a time. Specifically, define the following functions in `Main.c`:
+- `loopIntArray`: Loops through `intArray` and prints each value as an integer on separate lines.
+- `loopQuadArray`: Loops through `quadArray` and prints each value in hex (all capitalized) on separate lines.
+- `loopCharArray`: Loops through `charArray` and prints each character on a separate line.
 
-Finally, keep in mind that individual integers are 32 bits, which is 4 bytes. What if you loop through the elements of `intArray` one byte at a time and print out those values? What does this reveal?
+Finally, keep in mind that individual integers are 32 bits, which is 4 bytes. What if you loop through the elements of `intArray` one byte at a time and print out those values? Write the following code to find out:
+- In `Assembly.asm`, write a procedure named `readAssemblyIntArrayByte` that returns a given byte from `intArray` as if it were just an array of bytes (8-bit integers).
+- In `Main.c`, write a function named `loopIntArrayBytes` that loops through `intArray` one byte at a time and prints each value as an integer on separate lines.
