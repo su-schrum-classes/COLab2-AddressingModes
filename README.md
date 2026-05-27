@@ -32,5 +32,5 @@ Write functions in the C code that loop through the array values and print the i
 - `loopCharArray`: Loops through `charArray` and prints each character on a separate line.
 
 Finally, keep in mind that individual integers are 32 bits, which is 4 bytes. What if you loop through the elements of `intArray` one byte at a time and print out those values? Write the following code to find out:
-- In `Assembly.asm`, write a procedure named `readAssemblyIntArrayByte` that returns a given byte from `intArray` as if it were just an array of bytes (8-bit integers).
+- In `Assembly.asm`, write a procedure named `readAssemblyIntArrayByte` that returns a given byte from `intArray` as if it were just an array of bytes (8-bit integers). Note that the return type for this functions prototype in `Main.c` should be `uint8_t` (unsigned integer of exactly 8 bits).
 - In `Main.c`, write a function named `loopIntArrayBytes` that loops through `intArray` one byte at a time and prints each value as an integer on separate lines.
