@@ -7,6 +7,9 @@
 	global sendArray
 	global readAssemblyIntArray
 
+; Compiler notes for added security (prevents warning message ... do not change)
+	section .note.GNU-stack noalloc noexec nowrite progbits
+
 	section .text
 ; The int[] pointer parameter will be in register rdi, 
 ; the int parameter is in esi, and the return value comes from eax
