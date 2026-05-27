@@ -1,0 +1,1 @@
+nasm -felf64 Assembly.asm && gcc -no-pie Grade.c Assembly.o && ./grade.out
