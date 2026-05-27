@@ -33,7 +33,7 @@ int main() {
 
 	loopQuadArray();
 
-	for(i = 0; i < 80; i++) {
+	for(i = 0; i < 78; i++) {
 		char c = readAssemblyCharArray(i);
 		printf("readAssemblyCharArray(%d) = %c which is %X in hex\n",i,c,c);	
 	}
