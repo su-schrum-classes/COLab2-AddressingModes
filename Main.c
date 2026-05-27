@@ -6,9 +6,10 @@
  * Which simply executes the command:
  * nasm -felf64 Assembly.asm && gcc Main.c Assembly.o && ./a.out
  *
- * @author Jacob Schrum, 8/4/2022
+ * @author Jacob Schrum, 5/27/2026
  */
 
+#include <stdint.h>
 #include <stdio.h>
 
 int sendArray(int[],int);
